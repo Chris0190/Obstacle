@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
-x = 1,
-y=2,
+
 {
+float xValue = 0.01f; 
+float yValue = 0f; 
+float zValue =0f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,6 @@ y=2,
     // Update is called once per frame
     void Update()
     {
-        Translate.Transform(x, y),
+        transform.Translate(xValue, yValue, zValue);
     }
 }
